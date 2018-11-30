@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    
+    .main_img{
+        width:500px;
+        height:500px;
+    }
+    
+    
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Details</title>
+</head>
+<body>
+    <h1>Hello, my name is <%= name %></h1>
+
+    <img class= "main_img" src = "/images/<%= picture %>">
+
+
+    <h2>Favourite:</h2>
+    <p><%= favourite %></p>
+    <br>
+
+
+    <h2>I am <%= age %> years old</h2>
+    <br>
+    
+
+    <h2>My favourite sleeping spots are: </h2>
+        <% for (var x in sleeping_spots) { %>
+        <p><%= sleeping_spots [x] %></p> 
+        <%} %>
+
+
+    
+</body>
+</html>
